@@ -46,6 +46,14 @@
     color: black;
 }
 
+.Links>a:hover{
+    text-decoration: underline;
+}
+
+.Links>a:hover{
+    transform: scale(1.5);
+}
+
 .contactNumber{
     display: flex;
     flex-direction: row;
@@ -64,6 +72,10 @@
     padding: 8px 28px;
     background-color: white;
     border-radius: 25px;
+}
+
+.contactNumber>button:hover{
+    transform: scale(1.12);
 }
 
 .contactNumber>button>a{
@@ -112,6 +124,10 @@
     background-color: orange;
     border: none;
     border-radius: 25px;
+}
+
+.donationButton:hover{
+    transform: scale(1.12);
 }
 
 .donationButton>a{
@@ -277,6 +293,11 @@ font-family: 'Times New Roman', Times, serif;
     border: none;
     border-radius: 25px;
     color: #fff;
+}
+
+
+.QuestionForm>button:hover{
+    transform: scale(0.92);
 }
 
 .QuestionForm>input, .QuestionForm>textarea{

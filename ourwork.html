@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    
+.logoSpace{
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoImage{
+    height : 40px;
+    border-radius: 25px;
+}
+
+.logoSpace>a{
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+
+    #navbar ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #navbar ::before {
+        content: "";
+
+        position: absolute;
+        height: 20%;
+        width: 100%;
+    }
+
+    #navbar ul li a:hover {
+        color: rgb(0, 68, 255);
+        background-color: rgb(255, 123, 0);
+
+    }
+
+    #navbar ul li {
+        list-style: none;
+        font-size: 3ch;
+
+    }
+
+    #navbar ul li a {
+        display: block;
+        padding: 3px 22px;
+        border-radius: 3px;
+        text-decoration: none;
+        color: gray;
+    }
+
+    .con1 {
+        background-color: orange;
+        margin: 20px 0px;
+        height: 80px;
+        width: 1200px;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 5ch;
+        animation-duration: 2s;
+        animation-name: sop1;
+        animation-iteration-count: infinite;
+
+
+    }
+
+    @keyframes sop1 {
+        from {
+            width: 300px;
+        }
+
+        to {
+            width: 1200px;
+        }
+    }
+
+    .con2 {
+        height: 40px;
+        width: 600px;
+        font-size: 4ch;
+
+    }
+
+    #box3 img {
+        float: right;
+        height: 200px;
+        width: 250px;
+        padding: 20px 20px;
+        border-radius: 70px;
+    }
+
+    img:hover {
+        transform: scale(1.10, 1.10);
+    }
+
+
+    #box4 img {
+        padding: 50px 700px;
+        width: 300px;
+        height: 200px;
+        border-radius: 70px;
+    }
+
+
+
+    #box9 {
+        height: 535px;
+        width: auto;
+        font-size: 3ch;
+        background-image: url('https://humanappeal.org.uk/media/_cache/7ede9675f7ce.jpg');
+        opacity: 0.9;
+        background-size: 100% 100%;
+        color: rgb(215, 227, 237);
+        word-spacing: 0.35cm;
+        padding-top: 30px;
+        border-radius: 20px;
+    }
+
+    #box10 {
+        width: 1100px;
+        height: 400px;
+        margin: 30px 20px;
+        font-size: 3ch;
+    }
+
+    .con5 {
+        height: 900px;
+        width: 700px;
+        font-size: 5ch;
+        background-color: rgb(235, 193, 141);
+        margin: auto;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-around;
+        color: brown;
+        flex-wrap: wrap-reverse;
+    }
+
+    .conn {
+        background-color: rgb(206, 51, 51);
+        border: 2px solid rgb(60, 9, 9);
+        margin: auto;
+        padding: 10px 3px;
+        height: 100px;
+        justify-content: center;
+        color: black;
+        animation-name: text;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes text {
+        from {
+            color: rgb(220, 217, 217);
+        }
+
+        to {
+            color: rgb(35, 8, 82);
+        }
+    }
+
+    #pic {
+        margin: 30px 70px;
+    }
+
+    #pic img {
+        height: 400px;
+        width: 450px;
+        padding-left: 40px;
+        border-radius: 70px;
+
+    }
+
+    hr {
+        background-color: rgb(90, 2, 2);
+        height: 6px;
+        width: 1200px;
+    }
+
+    .footer {
+        height: 40vh;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #21202c;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fAdd,
+    .fMotto {
+        margin-top: 15px;
+    }
+
+    .fMotto {
+        padding-left: 20px;
+    }
+
+    .footer2>a,
+    .footer3>a {
+        color: #fff;
+        text-decoration: none;
+        margin-top: 15px;
+        font-size: small;
+    }
+
+    /* Icons */
+    .callIcon {
+        height: 15px;
+    }
+
+    .twinIcon {
+        height: 25px;
+        padding-right: 10px;
+    }
+
+    .charityIcon {
+        height: 24px;
+        padding-right: 10px;
+    }
+
+    .socialMedia1,
+    .socialMedia2,
+    .socialMedia3 {
+        align-items: baseline;
+        height: 35px;
+        margin-top: 15px;
+        background-color: #fff;
+        border-radius: 30px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our work</title>
+    <link= rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color:#fff;">
+    <nav id="navbar">
+        <div id="logo">
+            <img
+                scr="https://global-uploads.webflow.com/5e157548d6f7910beea4e2d6/6332e9efa57603c11b9fa5bf_NGO-logo-generator.png">
+        </div>
+        <ul>
+            <li class="item"><a href="/index.html">Home</a></li>
+            <li class="item"><a href="/aboutus.html">About Us</a></li>
+            <li class="item"><a href="/ourwork.html">Our Work</a></li>
+            <li class="item"><a href="/collaborate.html">Collab With Us</a></li>
+        </ul>
+        <hr>
+    </nav>
+    <div class="con1" id="box1"><u>OUR WORK:</u></div>
+    <div class="con2" id="box2">These organizations work tirelessly to bridge the educational gap, ensuring that
+        children and adults alike have access to quality learning opportunities. By establishing schools, offering
+        scholarships, and providing educational resources, NGOs empower individuals to break the cycle of poverty,
+        acquire valuable skills, and improve their future prospects. Through their dedicated efforts, NGOs contribute to
+        building a more equitable and knowledgeable society, where education becomes a right rather than a privilege,
+        making a positive impact on countless lives.</div>
+    <div class="con3" id="box3"><img
+            src="https://www.giveindia.org/blog/wp-content/uploads/2019/04/10-NGOs-rejuvenating-education-in-India-banner.jpg"><img
+            src="https://1.bp.blogspot.com/-vipBeBOIXyc/UwQ83rvvE7I/AAAAAAAAFRk/gxcj_n0ZsCI/s1600/Akshaya-Patra-+the-NGO-for-children.jpg">
+    </div>
+    <div class="con4" id="box4"><img
+            src="https://1.bp.blogspot.com/-2zhVpeXo5Eg/XhRi7dkGGXI/AAAAAAAAAJg/fCSmypQosCQ_XWVD0tMQgt-eqk0uweeDgCLcBGAsYHQ/s1600/best%2BNGO%2Bfor%2Beducation%2Bin%2BIndia.jpg">
+    </div>
+    <div class="con5"><b>OUR FOCUS AS AN NGO</b>
+        <div class="conn" id="box6">Empowering child education</div>
+        <div class="conn" id="box7">Providing free education</div>
+        <div class="conn" id="box8">Future guidance in education</div>
+        <div class="conn" id="box88">Assistance by teachers</div>
+    </div>
+    <div class="con6" id="box9"><u><b>Programmes conducted by us:</b></u>:<br><i><u>1:Early Childhood Education
+                Programs:</u></i> NGOs often run programs that focus on early childhood education to ensure children
+        receive a strong educational foundation. These programs include preschools, daycare centers, and parenting
+        workshops to promote cognitive and social development in young children.<br><i><u>2:School Feeding and Nutrition
+                Programs:</u> </i>To address issues of malnutrition and hunger that can affect children's ability to
+        learn, NGOs provide school feeding programs. These initiatives offer nutritious meals to students, encouraging
+        school attendance and improving overall health.<br><i><u>3.Scholarship and Sponsorship Programs:</u></i> NGOs
+        frequently offer scholarships or sponsorships to underprivileged children, covering their educational expenses
+        such as tuition, books, uniforms, and transportation. This support enables children from disadvantaged
+        backgrounds to access education<br><i><u>>4.Child-Centered Learning and Extracurricular Activities:</u></i> Some
+        NGOs design programs that emphasize child-centered learning methods and provide extracurricular activities such
+        as sports, arts, and life skills training. These activities make learning more engaging and holistic, promoting
+        personal development in addition to academic growth.<br>5.<i><u>Overall development:</u></i>We are geared toward
+        improving the educational opportunities and outcomes for children, especially those in marginalized or
+        vulnerable situations. NGOs work tirelessly to ensure that all children have access to quality education and the
+        resources they need to thrive in their learning journeys.</div>
+    <div class="con7" id="box10"><u><b>Future Vision:</b></u><br><u><i>1.Digital Inclusion and Online Learning:</i></u>
+        Many NGOs envision a future where they play a key role in providing equitable access to digital resources and
+        online learning opportunities. This involves ensuring that underserved communities have access to technology and
+        internet connectivity and offering high-quality online educational content<br><u><i>2.Global Collaboration and
+                Knowledge Sharing:</i></u> NGOs in education may increasingly focus on global collaboration and
+        knowledge sharing. They can work together to share best practices, resources, and research findings to improve
+        educational outcomes and address common challenges on a global scale<br><u><i>3.Innovative and Flexible Learning
+                Models:</i></u> NGOs may lead the way in developing and promoting innovative and flexible learning
+        models, including personalized learning pathways, project-based learning, and competency-based education. These
+        models can better adapt to the needs and interests of individual students.<br><u><i>4.Education for Sustainable
+                Development:</i></u> A key vision for many NGOs is to integrate education for sustainable development
+        into the curriculum, teaching students about environmental stewardship, social responsibility, and global
+        citizenship. This approach aims to empower future generations to address critical global issues.</div>
+    <div class="item" id="pic"><img
+            src="https://serudsindia.org/wp-content/uploads/2019/11/R_83911-cropped-1-1920x1080.jpg"><img
+            src="https://www.dailyexcelsior.com/wp-content/uploads/2019/12/integrated-Child-Deveoplment.jpg"></div>
+
+    <div class="footer">
+        <div class="footer1">
+            <img src="/Imagetouse/logo.webp" alt="Logo" class="logoImage">
+            <p class="fMotto">We're RiseTogether, passionate and<br> committed to helping non-profits<br>learn and grow
+            </p>
+            <p class="fAdd">Address: Survey No, 124, Paud Rd,<br> Kothrud, Pune, Maharashtra 411038</p>
+        </div>
+        <div class="footer2">
+            <p>MAIN MENU</p>
+            <a href="/index.html">Home Page</a>
+            <a href="/ourwork.html">How we Work</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="/collaborate.html">Collab</a>
+        </div>
+        <div class="footer3">
+            <p>NONPROFITS</p>
+            <a href="https://donate.stripe.com/test_cN2g2X7gPdJn1wcbIJ">Nonprofit Resources</a>
+            <a href="https://donate.stripe.com/test_cN2g2X7gPdJn1wcbIJ">Donation Online</a>
+            <a href="https://donate.stripe.com/test_cN2g2X7gPdJn1wcbIJ">Donation's Details</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Volunteering</a>
+        </div>
+        <div class="footer4">
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img
+                    src="./Imagetouse/4550857_email_gmail_mail_sending_yahoo_icon.png" alt="" class="socialMedia1"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img
+                    src="./Imagetouse/5305164_play_video_youtube_youtube logo_icon.png" alt="" class="socialMedia3"></a>
+        </div>
+    </div>
+</body>
+
+</html>

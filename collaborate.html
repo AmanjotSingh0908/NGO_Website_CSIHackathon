@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaboration</title>
+
+    <style>
+        body{
+            background-image: url("https://img.freepik.com/free-vector/white-abstract-background-design_361591-1242.jpg");
+        }
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 6vh;
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+
+        .link:hover{
+            transform: scale(1.5);
+        }
+
+        .leftNavBar {
+            padding: 3px 20px;
+            margin-right: 5px;
+            color: black;
+        }
+
+        .logoSpace {
+            padding: 0px 15px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logoImage {
+            height: 40px;
+            border-radius: 25px;
+        }
+
+        .logoSpace>a {
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: large;
+            color: black;
+        }
+
+        .Links>a {
+            padding: 5px 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+    .Links>a:hover{
+        text-decoration: underline;
+    }
+
+        .contactNumber {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .contactNumber>p,
+        .contactNumber>button {
+            margin-left: 15px;
+        }
+
+        .contactNumber>button {
+            border: 1px solid orange;
+            padding: 8px 28px;
+            background-color: white;
+            border-radius: 25px;
+        }
+
+        .contactNumber>button>a {
+            text-decoration: none;
+            color: orange;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .sidebar {
+            margin: auto;
+            padding: 2%;
+            text-align: center;
+        }
+
+        .content {
+            margin-right: 25%;
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            /* margin: 0;
+            padding: 0; */
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            background-color: pink;
+            padding: 1%;
+            border-radius: 2%;
+        }
+
+        .sidebar>a:hover{
+            text-decoration: dotted;
+        }
+
+        .sidebar a:visited {
+            color: black;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        main {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        h3 {
+            color: #555;
+            margin-top: 15px;
+        }
+
+        .eligibility-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .eligibility-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .eligibility-image {
+            flex: 1;
+        }
+
+        .eligibility-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            height: 40vh;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #21202c;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        .footer1,
+        .footer2,
+        .footer3,
+        .footer4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fAdd,
+        .fMotto {
+            margin-top: 15px;
+        }
+
+        .fMotto {
+            padding-left: 20px;
+        }
+
+        .footer2>a,
+        .footer3>a {
+            color: #fff;
+            text-decoration: none;
+            margin-top: 15px;
+            font-size: small;
+        }
+
+        /* Icons */
+        .callIcon {
+            height: 15px;
+        }
+
+        .twinIcon {
+            height: 25px;
+            padding-right: 10px;
+        }
+
+        .charityIcon {
+            height: 24px;
+            padding-right: 10px;
+        }
+
+        .socialMedia1,
+        .socialMedia2,
+        .socialMedia3 {
+            align-items: baseline;
+            height: 35px;
+            margin-top: 15px;
+            background-color: #fff;
+            border-radius: 30px;
+        }
+
+        #collaboration {
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 8%;
+            padding-bottom: 10%;
+        }
+
+        #partnership {
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        #contact{
+            padding-bottom: 5%;
+        }
+
+    </style>
+
+    <script>
+        document.querySelectorAll('.sidebar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const sectionId = this.getAttribute('href');
+                document.querySelector(sectionId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logoSpace">
+                <img src="./Imagetouse/logo.webp" alt="LOGO" class="logoImage">
+                <a href="/index.html">RiseTogether</a>
+            </div>
+            <div class="Links">
+                <a href="./index.html">Home</a>
+                <a href="#">CollabWithUs</a>
+                <a href="/ourwork.html">Our Work</a>
+                <a href="./aboutus.html">AboutUs</a>
+            </div>
+            <div class="leftNavBar">
+                <div class="contactNumber">
+                    <img src="./Imagetouse/phone-call.png" alt="" class="callIcon">
+                    <p>8888 7777 99</p>
+                    <button type="submit"><a
+                            href="https://donate.stripe.com/test_cN2g2X7gPdJn1wcbIJ">Donation</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <nav>
+
+            <ul>
+                <li><a href="#collaboration" >Collaboration Opportunities</a></li>
+                <li><a href="#partnership" >Partnership Details</a></li>
+                <li><a href="#contact" >Contact Us</a></li>
+
+        </nav>
+    </div>
+    <main>
+        <section id="collaboration">
+            <h2>Collaboration Opportunities</h2>
+            <p>
+                Description of collaboration opportunities and ways to support children. At our NGO, there are various
+                ways for organizations to join hands in supporting children. From sponsorship programs to educational
+                partnerships and community engagement initiatives, we offer diverse collaboration opportunities aimed at
+                enhancing the lives of children in need. Your contribution helps create a positive impact on their
+                future.
+                <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis soluta molestias nihil non et illum
+                odit excepturi. Hic, error. Ad esse dolorum, nobis adipisci, minima dolores nostrum odio distinctio nam
+                voluptatem deserunt quisquam officia!
+            </p>
+        </section>
+
+
+        <section id="partnership">
+            <h2>Partnership Details</h2>
+            <section class="eligibility-section">
+                <div class="eligibility-text">
+
+                    <h3>Eligibility</h3>
+                    <p>
+                        Description of the eligibility criteria for partnering with the NGO. Partnering with us is
+                        open
+                        to
+                        organizations that share our commitment to children's well-being. Whether you're a corporate
+                        entity,
+                        educational institution, or a community organization, your dedication to fostering a better
+                        future for
+                        children is what matters most.
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In autem, consectetur ducimus
+                        possimus
+                        quas
+                        quis, quae, expedita laudantium dignissimos doloribus saepe odit atque debitis nulla error
+                        perferendis
+                        maiores harum obcaecati accusamus nemo exercitationem repudiandae.
+                    </p>
+                    <h3>Criteria</h3>
+                    <ul>
+                        <li>Corporate Partners</li>
+                        <li>Educational Institutions</li>
+                        <li>Community Organizations</li>
+                        <li>Lorem ipsum, dolor sit.</li>
+                        <li>Lorem ipsum, dolor sit.</li>
+                        <li>Lorem ipsum, dolor sit.</li>
+                        <li>Lorem ipsum, dolor sit.</li>
+                        <li>Lorem ipsum, dolor sit.</li>
+                        <li>Lorem ipsum, dolor sit.</li>
+                    </ul>
+                </div>
+                <div class="eligibility-image">
+                    <img
+                        src="https://media.gettyimages.com/id/613253596/photo/group-of-happy-gypsy-indian-children-desert-village-india.jpg?s=612x612&w=gi&k=20&c=xcHn3bTaaHWHjfJPVrqwz3Asq3SIyhQD6wFrJCK22zg=">
+                </div>
+            </section>
+        </section>
+
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>To explore collaboration opportunities or for inquiries, feel free to reach out to our Partnerships Team.
+                You can contact us at partnerships@childenhancement.org or call us at +1-555-123-4567. Our team is eager
+                to discuss potential collaborations and guide you through our partnership process.
+                <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et consequatur quae iste facere eaque dolore
+                impedit debitis quod totam, exercitationem sunt, dolorem harum eligendi. Officia quae quis sit qui illum
+                asperiores dolor minima! Non.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                <img src="/Imagetouse/logo.webp" alt="Logo" class="logoImage">
+                <p class="fMotto">We're RiseTogether, passionate and<br> committed to helping non-profits<br>learn and
+                    grow</p>
+                <p class="fAdd">Address: Survey No, 124, Paud Rd,<br> Kothrud, Pune, Maharashtra 411038</p>
+            </div>
+            <div class="footer2">
+                <p>MAIN MENU</p>
+                <a href="/index.html">Home Page</a>
+            <a href="/ourwork.html">How we Work</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="/collaborate.html">Collab</a>
+            </div>
+            <div class="footer3">
+                <p>NONPROFITS</p>
+                <a href="https://donate.stripe.com/test_cN2g2X7gPdJn1wcbIJ">Nonprofit Resources</a>
+                <a href="https://donate.stripe.com/test_cN2g2X7gPdJn1wcbIJ">Donation Online</a>
+                <a href="https://donate.stripe.com/test_cN2g2X7gPdJn1wcbIJ">Donation's Details</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Volunteering</a>
+            </div>
+            <div class="footer4">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img
+                        src="./Imagetouse/4550857_email_gmail_mail_sending_yahoo_icon.png" alt=""
+                        class="socialMedia1"></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img
+                        src="./Imagetouse/5305164_play_video_youtube_youtube logo_icon.png" alt=""
+                        class="socialMedia3"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
