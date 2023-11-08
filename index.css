@@ -1,0 +1,373 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 6vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.leftNavBar{
+    padding: 3px 20px;
+    margin-right: 5px;
+    color: black;
+}
+
+.logoSpace{
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoImage{
+    height : 40px;
+    border-radius: 25px;
+}
+
+.logoSpace>a{
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+.Links>a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.contactNumber{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contactNumber>p, .contactNumber>button{
+    margin-left: 15px;
+}
+
+.contactNumber>button{
+    border: 1px solid orange;
+    padding: 8px 28px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.contactNumber>button>a{
+    text-decoration: none;
+    color: orange;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.introSection{
+    height: 90vh;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.heroSection{
+    height: 40vh;
+    padding: 20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.heroImg{
+    height: 90vh;
+    width: 100%;
+    /* position: relative; */
+}
+
+.heroLeft>h1{
+    position: absolute;
+    top: 0;
+    margin-top: 10%;
+    padding: 40px;
+    color: #fff;
+    /* font-weight: 900; */
+    font-size: 80px;
+}
+
+.donationButton{
+    padding: 20px 50px;
+    top: 0;
+    background-color: orange;
+    border: none;
+    border-radius: 25px;
+}
+
+.donationButton>a{
+    color: #fff;
+    font-size: medium;
+    text-decoration: none;
+}
+
+
+.heroLeft>p{
+    position: absolute;
+    top: 0;
+    margin-top: 10%;
+    padding-bottom: 100px;
+    padding: 10px 40px;
+    color: #fff;
+    font-size: larger;
+}
+
+.facilityBox{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.heroSection{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.leftHeroSection{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 4px;
+        grid-row-gap: 0px;
+        padding-right: 50px;
+}
+
+.grid1, .grid2, .grid3, .grid4{
+    height: 220px;
+    width: 98%;
+    border: 2px solid navy
+}
+
+.rightHeroSection>h1, .rightHeroSection>p{
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+    font-size: large;
+}
+
+.rightHeroSection>h1{
+    font-size: 50px;
+}
+
+.rightHeroSection>button{
+    padding: 10px 30px;
+    border: 1px solid navy;
+    border-radius: 25px;
+    background-color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+.rightHeroSection>button>a{
+    text-decoration: none;
+    color: navy;
+}
+
+.midPic{
+    width:90%;
+    margin: auto;
+}
+
+.Causes{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.Quote{
+background-color: #fff6f1;
+padding: 30px 5px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.quoteLeft>h2{
+    font-size: 40px;    
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+
+.quoteLeft>p{
+    padding-top: 20px;
+}
+
+.quoteRight>p{
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.quoteRight>h2{
+    padding: 20px 0px;
+    color: orange;
+    font-weight: 300;
+}
+
+.quoteRight>button{
+    padding: 10px 30px;
+    background-color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid navy;
+    border-radius: 25px;
+}
+
+.quoteRight>button>a{
+    color: navy;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.quoteBox{
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.Quote, .historyBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formP{
+    text-align: center;
+    padding-bottom: 10px;
+    color: orange;
+}
+
+.QuestionForm{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.QuestionForm>button{
+    padding: 10px 30px;
+    background-color: orange;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.QuestionForm>input, .QuestionForm>textarea{
+    margin-bottom: 10px;
+    display: block;
+    width: 400px;
+    height: 50px;
+    padding: 5px 15px;
+    background-color: #fff6f1;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.formSectionPic1{
+    height: 400px;
+}
+
+.formSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0px;
+}
+
+.successStory{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer{
+    height: 40vh;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #21202c;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.footer1, .footer2, .footer3, .footer4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fAdd,.fMotto{
+    margin-top: 15px;
+}
+.fMotto{
+    padding-left: 20px;
+}
+
+.footer2>a, .footer3>a{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: small;
+}
+
+/* Icons */
+.callIcon{
+    height: 15px;
+}
+
+.twinIcon{
+    height: 25px;
+    padding-right: 10px;
+}
+
+.charityIcon{
+    height: 24px;
+    padding-right: 10px;
+}
+
+.socialMedia1, .socialMedia2, .socialMedia3{
+    align-items: baseline;
+    height: 35px;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+@media (min-width: 0px) and (max-width:426px) {
+    *{
+        display: none;
+    }
+
+}

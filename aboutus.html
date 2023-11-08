@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Raleway:wght@100;200&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 6vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.leftNavBar{
+    padding: 3px 20px;
+    margin-right: 5px;
+    color: black;
+}
+
+.logoSpace{
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoImage{
+    height : 40px;
+    border-radius: 25px;
+}
+
+.logoSpace>a{
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+.Links>a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.contactNumber{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contactNumber>p, .contactNumber>button{
+    margin-left: 15px;
+}
+
+.contactNumber>button{
+    border: 1px solid orange;
+    padding: 8px 28px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.contactNumber>button>a{
+    text-decoration: none;
+    color: orange;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+        body {
+            background-color: rgb(245, 239, 229);
+        }
+
+        h1,
+        h2 {
+            /* heading */
+            text-align: center;
+            text-decoration: underline;
+            font-family: Nunito, Raleway;
+        }
+
+        h3 {
+            font-size: 45px;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .highlight {
+            color: rgb(112, 36, 36);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .cont1 {
+            /* main content */
+            background-color: bisque;
+            border-color: black;
+            box-sizing: border-box;
+            box-shadow: 5px 5px gray;
+            margin: 15%;
+            margin-top: 1%;
+            margin-bottom: 5%;
+            padding: 2%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+        .impactsection {
+            background-color: rgb(177 164 142 / 54%);
+            padding: 1px;
+        }
+
+        .cont2 {
+
+            text-align: center;
+        }
+
+        .center {
+            /* To align things to the center  */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+
+        .info-boxes {
+            display: flex;
+            justify-content: center;
+        }
+
+        .info-box {
+            width: 15%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #eeb8b8;
+            margin: 10px;
+            box-shadow: 5px 5px gray;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+        .teammem {
+            width: 15%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #eeb8b8;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .crop {
+            display: inline-block;
+            position: relative;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+        .crop img {
+            width: auto;
+            height: 100%;
+            margin-left: -50px;
+        }
+
+        .footer{
+    height: 40vh;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #21202c;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.footer1, .footer2, .footer3, .footer4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fAdd,.fMotto{
+    margin-top: 15px;
+}
+.fMotto{
+    padding-left: 20px;
+}
+
+.footer2>a, .footer3>a{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: small;
+}
+
+/* Icons */
+.callIcon{
+    height: 15px;
+}
+
+.twinIcon{
+    height: 25px;
+    padding-right: 10px;
+}
+
+.charityIcon{
+    height: 24px;
+    padding-right: 10px;
+}
+
+.socialMedia1, .socialMedia2, .socialMedia3{
+    align-items: baseline;
+    height: 35px;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+
+        @media (min-width:0px) and (max-width:425px) {
+            .cont1 {
+                /* main content */
+                background-color: bisque;
+                border-color: black;
+                /* box-sizing: border-box; */
+                margin: auto;
+                margin-right: 0;
+                box-shadow: 5px 5px gray;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+            }
+        }
+
+        @media (min-width:426px) and (max-width:768px) {
+            .cont1 {
+                background-color: bisque;
+                border-color: black;
+                box-sizing: border-box;
+                box-shadow: 5px 5px gray;
+                margin: 15%;
+                margin-top: 1%;
+                margin-bottom: 5%;
+                padding: 2%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+            }
+
+            .info-box {
+                width: 20%;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #eeb8b8;
+                margin: 10px;
+                box-shadow: 5px 5px gray;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <body>
+            <div class="navbar">
+                <div class="logoSpace">
+                    <img src="./Imagetouse/logo.webp" alt="LOGO" class="logoImage">
+                    <a href="#">RiseTogether</a>
+                </div>
+                <div class="Links">
+                    <a href="./index.html">Home</a> 
+                    <a href="#">Awards</a> 
+                    <a href="#">Review</a> 
+                    <a href="./aboutus.html">AboutUs</a> 
+                </div>
+                <div class="leftNavBar">
+                    <div class="contactNumber">
+                        <img src="./Imagetouse/phone-call.png" alt="" class="callIcon"><p>8888 7777 99</p>
+                        <button type="submit"><a href="https://donate.stripe.com/test_cN2g2X7gPdJn1wcbIJ">Donation</a></button>
+                    </div>
+                </div>
+            </div>
+
+    </header>
+
+    <br><br>
+
+    <img class="center"
+        src="https://thumbs.dreamstime.com/z/funny-asian-children-rural-areas-china-ride-bikes-zhaoxing-dong-village-guizhou-province-april-east-asia-chinese-36069150.jpg?w=768"
+        alt="https://thumbs.dreamstime.com/z/three-rural-children-expressive-faces-life-kids-villages-not-good-very-few-kids-gets-chance-to-complete-their-48019198.jpg?w=992">
+    <div class="hi">
+
+        <h1>WHO ARE WE?</h1>
+        <div class="cont1">
+
+            <p>At XYZ Foundation, we are committed to making a positive difference in the lives of children. Our
+                organization is driven by the belief that every child deserves access to education, healthcare, and a
+                safe
+                environment to thrive. With a focus on empowerment and support, we work tirelessly to provide
+                underprivileged children with educational resources, health services, and emotional support. Our
+                dedicated
+                team and passionate volunteers aim to create a nurturing environment that fosters the holistic
+                development
+                of children, ensuring a brighter and promising future for each and every young individual we serve.</p>
+
+
+            <h2>What is our goal?</h2>
+            <p>Our mission at [NGO Name] is to [insert mission statement, outlining the core purpose and values of the
+                organization in assisting children]. We strive to provide comprehensive support, education, and
+                resources to
+                underprivileged and vulnerable children, empowering them to thrive and reach their full potential. Our
+                commitment lies in [mentioning the key principles or objectives that drive the organization].</p>
+
+            <h2>History and Background</h2>
+            <p>[NGO Name] was founded in [year of establishment] with the vision of [briefly describe the founding
+                principles, motivations, or individuals behind the organization]. Since our inception, we have
+                tirelessly
+                worked towards [mention significant milestones, programs, or initiatives implemented over the years].
+                Our
+                journey began with a profound dedication to [addressing specific issues or needs children face], and
+                through
+                our collective efforts and the support of our community, we have [highlight notable achievements or
+                impacts
+                on children's lives].</p>
+
+        </div>
+    </div>
+    <div class="impactsection">
+
+        <div class="cont2">
+
+            <h2>Impact and Achievement</h2>
+
+
+
+            <div class="info-boxes">
+                <div class="info-box">
+                    <h3 class="highlight">15+</h3>
+                    <p class="highlight" style="font-size: 25px;">LAC</p>
+                    <p>children and
+                        their families are
+                        impacted every year</p>
+                </div>
+                <div class="info-box">
+                    <h3 class="highlight">2000+</h3>
+                    <p class="highlight" style="font-size: 25px;">VILLAGES</p>
+                    <p>and slums
+                        are reached out
+                        to across the country.</p>
+                </div>
+                <div class="info-box">
+                    <h3 class="highlight">400+</h3>
+                    <p class="highlight" style="font-size: 25px;">PROJECTS</p>
+                    <p>focused on
+                        education, healthcare,
+                        and women empowerment</p>
+                </div>
+            </div>
+
+
+            <p class="cont1">At [NGO Name], our impact resonates deeply with the lives we touch. Over the years, our
+                initiatives have led
+                to transformative outcomes for children in various communities. Through our educational programs, we've
+                provided schooling opportunities to over 5,000 children in [locations or communities]. Our healthcare
+                services have ensured regular medical check-ups and vaccinations, benefiting more than 3,000 children.
+                Additionally, our child welfare projects have helped provide shelter and care to 500 orphaned or
+                homeless
+                children. These achievements exemplify our commitment to improving the lives of children, one step at a
+                time.</p>
+
+        </div>
+    </div>
+
+    <div>
+
+        <h2>Team</h2>
+
+        <div class="info-boxes">
+            <div class="teammem">
+                <div class="crop">
+
+                    <img src="https://buffer.com/library/content/images/2023/10/free-images.jpg">
+                </div>
+                <h2>Ava Thompson</h2>
+                <h4>Founder person</h4>
+            </div>
+            <div class="teammem">
+                <div class="crop">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
+                </div>
+                <h2>Noah Rodriguez</h2>
+                <h4>Fundraising Specialist</h4>
+
+            </div>
+            <div class="teammem">
+                <div class="crop">
+
+                    <img
+                        src="https://media.istockphoto.com/id/636379014/photo/hands-forming-a-heart-shape-with-sunset-silhouette.jpg?s=612x612&w=0&k=20&c=CgjWWGEasjgwia2VT7ufXa10azba2HXmUDe96wZG8F0=">
+                </div>
+                <h2>Liza Nguyen</h2>
+                <h4>Program Coordinator</h4>
+
+            </div>
+
+            <div class="teammem">
+                <div class="crop">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjYFV-bwRLTx5vbXeIRyRZDH86KNG-4ktGcg&usqp=CAU">
+                </div>
+                <h2>Susan Susan</h2>
+                <h4>Community Engagement Officer</h4>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer1">
+            <img src="/Imagetouse/logo.webp" alt="Logo" class="logoImage">
+            <p class="fMotto">We're RiseTogether, passionate and<br> committed to helping non-profits<br>learn and grow</p>
+            <p class="fAdd">Address: Survey No, 124, Paud Rd,<br> Kothrud, Pune, Maharashtra 411038</p>
+        </div>
+        <div class="footer2">
+            <p>MAIN MENU</p>
+            <a href="/">Home Page</a>
+            <a href="">How we Work</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="">Causes</a>
+        </div>
+        <div class="footer3">
+            <p>NONPROFITS</p>
+            <a href="https://donate.stripe.com/test_cN2g2X7gPdJn1wcbIJ">Nonprofit Resources</a>
+            <a href="https://donate.stripe.com/test_cN2g2X7gPdJn1wcbIJ">Donation Online</a>
+            <a href="https://donate.stripe.com/test_cN2g2X7gPdJn1wcbIJ">Donation's Details</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Volunteering</a>
+        </div>
+        <div class="footer4">
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src="./Imagetouse/4550857_email_gmail_mail_sending_yahoo_icon.png" alt="" class="socialMedia1"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="./Imagetouse/5305164_play_video_youtube_youtube logo_icon.png" alt="" class="socialMedia3"></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
